@@ -1,0 +1,33 @@
+body{
+    margin:0;
+}
+#city{
+    height:40px;
+    width:200px;
+    margin:30px;
+    border-radius:100px;
+    text-align:center;
+}
+#head{
+    background-color:black;
+    color:white;
+    font-family:American Typewriter, serif;
+
+}
+img{
+    height:100px;
+    width:100px;
+}
+.imgbtn{
+    border:none;
+    border-radius:100px;
+    height:200px;
+    width:250px;
+}
+td{
+    text-align:center;
+}
+
+#display{
+    display:none;
+}
