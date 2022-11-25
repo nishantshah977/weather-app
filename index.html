@@ -1,92 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>Weather App</title>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
     <center>
-         
-        
-    <div id="head">  
-        <br>
-        <h1>Weather</h1>  
-    <input id="city" name="cityname" placeholder="Enter your City" required>
-    <input type="button" onclick="show()" class="btn btn-primary" value="Search">
-    <br>
-     <span style="color:white;" id="btn"></span>   
-    </div>
-    
-    <br>
-    <button class="imgbtn">
-    <img src="https://img.icons8.com/small/344/partly-cloudy-day.png">
-    <br>
-    <span class="description"></span>
-    <br>
-    <br>
-    <span class="temp"></span>
-    </button>
-    
-    <div id="display">
-    <br>
-    <hr width="200" size="10" color="black">
-    <br>
+        <div id="head">
+            <br>
+            <h1>Weather</h1>
+            <form>
+                <input id="city" name="cityname" placeholder="Enter your City" required>
+                <input type="submit" class="btn btn-primary" value="Search">
+            </form>
+            <br>
+            <span style="color:white;" id="btn"></span>
+        </div>
 
-   <table>
-       <strong><u>Weather Info</u></strong>
-       <tr>
-           <td>Pressure:</td>
-           <td><span class="pressure"></span></td>
-       </tr>
-       <tr>
-           <td>Min Temp:</td>
-           <td><span class="temp_min"></span></td>
-       </tr>
-        <tr>
-           <td>Max Temp:</td>
-           <td><span class="temp_max"></span></td>
-       </tr>
-        <tr>
-           <td>Humidity:</td>
-           <td><span class="humidity"></span></td>
-       </tr>
-        <tr>
-           <td>Wind Speed:</td>
-           <td><span class="speed"></span></td>
-       </tr>
-    </table>
-    <hr width="200" size="10" color="black">
-    <b><u>Location Info</u></b><br>
-    <table>
-   <tr>
-           <td>Name:</td>
-           <td><span class="name"></span></td>
-       </tr>
-        <tr>
-           <td>Country:</td>
-           <td><span class="country"></span></td>
-       </tr>
-        <tr>
-           <td>Longitude:</td>
-           <td><span class="longitude"></span></td>
-       </tr>
-        <tr>
-           <td>Latitude:</td>
-           <td><span class="latitude"></span></td>
-       </tr>
-   </table>
-   </div>
-   <pre>
-       
-       
-       
-   </pre>
-   
-   <span id="year"></span> Copyright <sup>&copy;</sup>, Nishant Shah
-   </center>
+        <br>
+        <button class="imgbtn">
+            <img src="https://img.icons8.com/small/344/partly-cloudy-day.png">
+            <br>
+            <span class="description"></span>
+            <br>
+            <br>
+            <span class="temp"></span>
+        </button>
+
+        <div id="display">
+            <br>
+            <hr width="200" size="10" color="black">
+            <br>
+
+            <table>
+                <strong><u>Weather Info</u></strong>
+                <tr>
+                    <td>Pressure:</td>
+                    <td><span class="pressure"></span></td>
+                </tr>
+                <tr>
+                    <td>Min Temp:</td>
+                    <td><span class="temp_min"></span></td>
+                </tr>
+                <tr>
+                    <td>Max Temp:</td>
+                    <td><span class="temp_max"></span></td>
+                </tr>
+                <tr>
+                    <td>Humidity:</td>
+                    <td><span class="humidity"></span></td>
+                </tr>
+                <tr>
+                    <td>Wind Speed:</td>
+                    <td><span class="speed"></span></td>
+                </tr>
+            </table>
+            <hr width="200" size="10" color="black">
+            <b><u>Location Info</u></b><br>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><span class="name"></span></td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td><span class="country"></span></td>
+                </tr>
+                <tr>
+                    <td>Longitude:</td>
+                    <td><span class="longitude"></span></td>
+                </tr>
+                <tr>
+                    <td>Latitude:</td>
+                    <td><span class="latitude"></span></td>
+                </tr>
+            </table>
+        </div>
+<br><br>
+        <span id="year"></span> Copyright <sup>&copy;</sup>, Nishant Shah
+    </center>
+    <div class="modal-container"></div>
     <script src="script.js"></script>
 </body>
+
 </html>
